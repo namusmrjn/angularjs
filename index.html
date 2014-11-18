@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="meetupApp"> 
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<!-- Meetups View -->
+	<div ng-controller="meetupsController">
+		<!-- <input type="text" name="fname" ng-model="fname"/>
+		<input type="file" ng-file-select="onFileSelect($files)" > -->
+
+		<input type="file" name="image" id="image" ng-file-select="onFileSelect($files)">
+		<img ng-src="images/2m.jpg">
+
+		<!-- <input type="file" title="" accept="image/*"  ng-file-select="onFileSelect($files)" class="upload" /> -->
+
+	<!-- <form class="form-horizontal" data-ng-submit="onFileSelect($file)" >
+	    <div class="form-group">
+	        <div class="controls">
+	            <input type="file" title="" accept="image/*"  ng-file-select="onFileSelect($files)" class="upload" />
+	        </div>
+	    </div>
+	    <div class="form-group">
+	        <input type="submit" class="btn btn-default">
+	    </div>
+	</form> -->
+	</div>
+	<!--script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script-->
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
+    <script src="http://angular-file-upload.appspot.com/js/angular-file-upload.js"></script>
+    <!--script type="text/javascript" src="angular-file-upload/angular-file-upload.js"></script-->
+
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="meetups-controller.js"></script>
+</body>
+</html>
